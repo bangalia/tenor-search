@@ -8,9 +8,11 @@ const express = require('express');
     "Locale": "en_US", // Your locale here, case-sensitivity depends on input
 });
 
-
 // App Setup
 const app = express();
+
+// Somewhere near the top
+app.use(express.static('public'));
 
 // Middleware
 const exphbs  = require('express-handlebars');
