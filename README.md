@@ -11,8 +11,9 @@
     <img src ="https://img.shields.io/docker/image-size/abangali/gif-search">
 
 </p>
-> <h2 align="center"> How To Download </h2>
-
+ <h2 align="center"> How To Download </h2>
+[Freshping Status Page]( https://statuspage.freshping.io/57438-GifSearchDockerProject)
+[Deployment Link](http://gif-search.dev.anitabangali.com)
 ```
 docker pull abangali/gif-search:latest
 ```
