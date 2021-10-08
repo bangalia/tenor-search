@@ -1,13 +1,13 @@
-FROM node:8-alpine
+FROM node:8-alpine 
 
-#RUN npm-install
+ADD . /app
 
-WORKDIR /gif-search
-COPY package*.json ./
+WORKDIR /app
+COPY package*.json /
 
 RUN npm install
 
 COPY . .
 EXPOSE 3000
 
-CMD ["npm","run"]
+CMD ["node", "app.js"]
