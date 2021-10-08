@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+    web:
+      build:
+          context: .
+          dockerfile: DockerFile
+      image: nodejs
+      container_name: gif-search
+      ports:
+        - "3000:3000"
+      networks:
+        - default
+      
+
